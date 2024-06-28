@@ -3,8 +3,24 @@ body {
     font-family: 'DM Sans';
     background-color: black;
     color: white;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    font-optical-sizing: none;
 }
 
 h1 {
     font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
